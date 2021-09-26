@@ -1,0 +1,102 @@
+/* SITE WIDE STYLES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 14px;
+}
+
+/* HOMEPAGE */
+
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button.accordion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    width: 100%;
+    background-color: whitesmoke;
+    border: none;
+    border-bottom: 1px solid lightgrey;
+    outline: none;
+    padding: 15px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+    border-radius: 5px 5px 0px 0px;
+}
+
+button.accordion::after {
+    content: url(/resources/img/plus.svg);
+}
+
+button.accordion.is-open::after {
+    content: url(/resources/img/minus.svg);
+}
+
+button.accordion:hover, button.item.is-open {
+    background-color: #ddd;
+}
+
+button.accordion.is-open:hover {
+    background-color: darkgray;
+}
+
+.accordion-content {
+    padding: 0px 20px;
+    border-left: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+}
+
+.content {
+    padding: 15px 0px;
+    font-size: 14px;
+}
+
+
+
