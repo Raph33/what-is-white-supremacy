@@ -10,10 +10,15 @@
     padding: 0;
     box-sizing: border-box;
     font-family: NotoSans-Regular, sans-serif;
+    background-color: black;
 }
 
 p {
     font-size: 14px;
+}
+
+p, a, h1, h2, h3, button {
+    color: #EEEEEE;
 }
 
 body {
@@ -26,13 +31,14 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 nav a {
     text-decoration: none;
-    color: black;
+    color: #EEEEEE;
 }
 
 .main {
@@ -63,45 +69,48 @@ button.accordion {
     justify-content: space-between;
     text-align: left;
     width: 100%;
-    background-color: whitesmoke;
+    background-color: #212121;
     border: none;
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 1px solid #616161;
     outline: none;
     padding: 15px 20px;
     font-size: 15px;
     cursor: pointer;
-    transition: background-color 0.2s linear;
-    border-radius: 5px 5px 0px 0px;
+    transition: background-color 0.2s linear;;
 }
 
 button.accordion::after {
-    content: url(/resources/img/plus.svg);
+    content: url(/resources/img/plus-lightgrey.svg);
 }
 
 button.accordion.is-open::after {
-    content: url(/resources/img/minus.svg);
+    content: url(/resources/img/minus-lightgrey.svg);
 }
 
-button.accordion:hover, button.item.is-open {
-    background-color: #ddd;
+button.accordion:hover, button.accordion.is-open {
+    background-color: #424242;
 }
 
 button.accordion.is-open:hover {
-    background-color: darkgray;
+    background-color: #616161;
 }
 
 .accordion-content {
     padding: 0px 20px;
-    border-left: 1px solid whitesmoke;
-    border-right: 1px solid whitesmoke;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-in-out;
+    background-color: #424242;
 }
 
 .content {
     padding: 15px 0px;
     font-size: 14px;
+    background-color: #424242;
+}
+
+.content p, .content a {
+    background-color: #424242;
 }
 
 
