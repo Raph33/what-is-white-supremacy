@@ -1,17 +1,20 @@
 /* SITE WIDE STYLES */
 
+@font-face {
+    font-family: "NotoSans-Regular";
+    src: url(/resources/fonts/NotoSans-Regular.ttf) format("truetype");
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: NotoSans-Regular, sans-serif;
 }
 
 p {
     font-size: 14px;
 }
-
-/* HOMEPAGE */
 
 body {
     display: flex;
@@ -32,12 +35,14 @@ nav a {
     color: black;
 }
 
-#main {
+.main {
     display: flex;
     flex-direction: column;
     max-width: 600px;
     margin: auto;
 }
+
+/* HOMEPAGE */
 
 .section {
     display: flex;
