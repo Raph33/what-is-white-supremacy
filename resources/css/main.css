@@ -17,7 +17,7 @@ p {
     font-size: 14px;
 }
 
-p, a, h1, h2, h3, button {
+p, a, h1, h2, h3, button, li {
     color: #EEEEEE;
 }
 
