@@ -109,7 +109,7 @@ button.accordion.is-open:hover {
     background-color: #424242;
 }
 
-.content p, .content a {
+.content p, .content a, .content ul {
     background-color: #424242;
 }
 
